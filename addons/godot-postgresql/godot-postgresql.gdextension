@@ -5,12 +5,6 @@ compatibility_minimum = "4.7"
 
 [libraries]
 
-macos.debug = "bin/lib_postgresql_adapter.macos.template_debug.framework/lib_postgresql_adapter.macos.template_debug"
-macos.release = "bin/lib_postgresql_adapter.macos.template_release.framework/lib_postgresql_adapter.macos.template_release"
-
-windows.debug.x86_64 = "bin/lib_postgresql_adapter.windows.template_debug.double.x86_64.dll"
-windows.release.x86_64 = "bin/lib_postgresql_adapter.windows.template_release.double.x86_64.dll"
-
 linux.debug.x86_64 = "bin/lib_postgresql_adapter.linux.template_debug.double.x86_64.so"
 linux.release.x86_64 = "bin/lib_postgresql_adapter.linux.template_release.double.x86_64.so"
 
@@ -18,22 +12,6 @@ linux.debug.arm64 = "bin/lib_postgresql_adapter.linux.template_debug.double.arm6
 linux.release.arm64 = "bin/lib_postgresql_adapter.linux.template_release.double.arm64.so"
 
 [dependencies]
-
-macos.debug = {}
-macos.release = {}
-
-windows.debug.x86_64 = {
-    "bin/pqxx.dll" : "",
-    "bin/libpq.dll" : "",
-    "bin/libcrypto-3-x64.dll" : "",
-    "bin/libssl-3-x64.dll" : ""
-}
-windows.release.x86_64 = {
-    "bin/pqxx.dll" : "",
-    "bin/libpq.dll" : "",
-    "bin/libcrypto-3-x64.dll" : "",
-    "bin/libssl-3-x64.dll" : ""
-}
 
 linux.debug.x86_64 = {}
 linux.release.x86_64 = {}
