@@ -1,0 +1,48 @@
+# Build artifacts
+*.os
+*.o
+*.a
+*.dylib
+*.so
+*.dll
+*.lib
+*.framework
+
+# Static libpq/libpqxx built by build_scripts/build_third_party.sh
+third_party/
+
+# Generated from the engine with `godot --headless --dump-extension-api` (engine-specific)
+extension_api.json
+
+# SCons build files
+.sconsign.dblite
+build/
+
+# Godot build artifacts and editor cache (tests/ is a Godot project)
+.godot/
+godot-cpp/bin/
+addons/godot-postgresql/bin/
+
+# Framework builds (macOS)
+*.framework/
+**/*.framework/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Python
+__pycache__/
+*.pyc
